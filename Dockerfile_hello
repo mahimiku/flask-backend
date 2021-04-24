@@ -1,0 +1,9 @@
+FROM ubuntu:18.04
+RUN apt-get update -y  && \
+    apt-get install -y python3-pip python3
+
+WORKDIR /app
+ADD . /app
+RUN ls -ltrh
+RUN pip3 install -r requirement.txt
+CMD ["python3","hello.py"]
