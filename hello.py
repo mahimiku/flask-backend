@@ -10,7 +10,7 @@ CORS(app)
 def hello_world():
         data = {}
         data['success'] = True
-        data['msg'] = "Hello Mr. Prakash Kumar Singh, Bhai khane mai kya hai?"
+        data['msg'] = "Hello Mr. Chandramohan Kumar Singh, Bhai earphone lga le"
         return json.dumps(data), 200, {'content-type': 'application/json'}
 
 if __name__ == '__main__':
